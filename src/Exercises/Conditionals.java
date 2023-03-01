@@ -3,13 +3,40 @@ package Exercises;
 import java.util.Scanner;
 
 public class Conditionals {
+
     public static void main(String[] args) {
 
-        // First Conditional - the class solution
+        System.out.println("Senior, Student, Pet Discount");
 
-        boolean isSenior = false;
-        boolean isDog = false;
-        boolean isStudent = true;
+        checkIfDiscount(false, false, false);
+        checkIfDiscount(false, false, true);
+        checkIfDiscount(false, true, true);
+        checkIfDiscount(true, true, true);
+
+    /*    Scanner scanner1 = new Scanner(System.in);
+        System.out.println( "How many non fiction books you bought? ");
+        int nonFiction = scanner1.nextInt();
+
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.println( "How many fiction books you bought? ");
+        int fiction = scanner2.nextInt();
+    */
+        System.out.println();
+        System.out.println("Bookstore discount");
+        checkDiscountBooks(2, 0);
+        checkDiscountBooks(4, 8);
+        checkDiscountBooks(2, 3);
+        checkDiscountBooks(4, 1);
+        checkDiscountBooks(3, 2);
+        checkDiscountBooks(5, 0);
+        checkDiscountBooks(4, 5);
+        checkDiscountBooks(5, 3);
+
+
+    }
+
+    public static void checkIfDiscount(boolean isSenior, boolean isStudent, boolean isDog) {
+        // First Conditional - the class solution
 
         if (isSenior) {
             System.out.println("Discount!");
@@ -20,22 +47,15 @@ public class Conditionals {
         } else {
             System.out.println("No discount!");
         }
+    }
 
-        //Second Conditional - my own solution
+    public static void checkDiscountBooks(int nonFiction, int fiction) {
 
-        Scanner scanner1 = new Scanner(System.in);
-        System.out.println( "How many non fiction books you bought? ");
-        int nonFiction = scanner1.nextInt();
-
-        Scanner scanner2 = new Scanner(System.in);
-        System.out.println( "How many fiction books you bought? ");
-        int fiction = scanner2.nextInt();
-
-        if ( nonFiction > 2 && fiction > 1) {
-            System.out.println("You're entitled for a Discount!");
-        }
-        else {
-            System.out.println("Sorry, you're not entitled for a discount");
+        if (nonFiction > 2 && fiction > 1) {
+            System.out.println("Discount!");
+        } else {
+            System.out.println("No discount");
         }
     }
+
 }
