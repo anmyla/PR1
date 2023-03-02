@@ -8,35 +8,26 @@ public class Discount {
         double busTicketFullPrice = 3.20;
         double bookStoreDiscount = 0.10;
 
-//        double nonFictionBook1Price = 23;
-//        double nonFictionBook2Price = 28;
-//        double fictionBook1Price = 15;
-//        double fictionBook2Price = 18;
-
-//        boolean isEdnaASenior = true;
-//        boolean isPaulAStudent = true;
-//        boolean isLolaADog = true;
-
-//        double discountedBusTicketSenior = busTicketFullPrice - (busTicketFullPrice * seniorDiscount) ;
-//        double discountedBusTicketDog = busTicketFullPrice - (busTicketFullPrice * dogDiscount) ;
-//        double discountedBusTicketStudent = busTicketFullPrice - (busTicketFullPrice * studentDiscount);
 
 
+        System.out.println("Who is entiled to get a bus ticket discount?");
         checkIfEntitledToABusTicketDiscount(true, true, true);
 
+
         System.out.println("---------------------------------------------------------------------");
+        System.out.println("Are they entitled to ge a bookstore discount?");
         checkIfEntitledToABookstoreDiscount(2,1);
 
+
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("Is there money saved from the bookstore discount.");
+        calculateBookstoreDiscount(false,2, 1);
+
         System.out.println("---------------------------------------------------------------------");
 
+        double moneySavedFromBusTicketsDiscounts = (2 * ((busTicketFullPrice * seniorDiscount) + (busTicketFullPrice * dogDiscount) + (busTicketFullPrice * studentDiscount)));
 
-
-
-//        double moneySavedFromBusTicketsDiscounts = (2 * ((busTicketFullPrice * seniorDiscount) + (busTicketFullPrice * dogDiscount) + (busTicketFullPrice * studentDiscount)));
-//
-//        double moneySavedFromBookStoreDiscounts = ((23 + 28 + 15 + 18) * bookStoreDiscount);
-//
-//        System.out.println("Total money saved from all discounts: " + (moneySavedFromBookStoreDiscounts + moneySavedFromBusTicketsDiscounts));
+        System.out.println("Total money saved from all discounts: " + (moneySavedFromBusTicketsDiscounts));
 
     }
 
@@ -72,11 +63,14 @@ public class Discount {
     }
 
     //------------------------------------------------------------------------------------------------------------//
-    public static int checkIfEntitledToABookstoreDiscount(int nonFictionBooks, int fictionBooks) {
+    public static int checkIfEntitledToABookstoreDiscount( int nonFictionBooks, int fictionBooks) {
         double bookStoreDiscount = 0.10;
+        boolean entitledToABookstoreDiscount;
         double moneySavedFromBookStoreDiscounts;
 
+
         if ((nonFictionBooks >2) && (fictionBooks >0)) {
+            entitledToABookstoreDiscount = true;
             System.out.println("You get a bookstore discount!");
             moneySavedFromBookStoreDiscounts = ((23 + 28 + 15 + 18) * bookStoreDiscount);
         } else {
@@ -85,5 +79,31 @@ public class Discount {
       return 0;
     }
 
+    public static int calculateBookstoreDiscount(boolean entitledToABookstoreDiscount, int nonFictionBooks, int fictionBooks) {
+        double bookStoreDiscount = 0.10;
+        double moneySavedFromBookStoreDiscounts;
+
+        if ((nonFictionBooks >2) && (fictionBooks >0)) {
+            entitledToABookstoreDiscount = true;
+            moneySavedFromBookStoreDiscounts = ((23 + 28 + 15 + 18) * bookStoreDiscount);
+        } else {
+            System.out.println("No money saved from purchasing the books!");
+        }
+        return 0;
+    }
 }
+
+//        boolean isEdnaASenior = true;
+//        boolean isPaulAStudent = true;
+//        boolean isLolaADog = true;
+
+//        double nonFictionBook1Price = 23;
+//        double nonFictionBook2Price = 28;
+//        double fictionBook1Price = 15;
+//        double fictionBook2Price = 18;
+
+
+//        double discountedBusTicketSenior = busTicketFullPrice - (busTicketFullPrice * seniorDiscount) ;
+//        double discountedBusTicketDog = busTicketFullPrice - (busTicketFullPrice * dogDiscount) ;
+//        double discountedBusTicketStudent = busTicketFullPrice - (busTicketFullPrice * studentDiscount);
 
