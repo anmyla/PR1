@@ -16,12 +16,13 @@ public class Discount {
 
         System.out.println("---------------------------------------------------------------------");
         System.out.println("Are they entitled to ge a bookstore discount?");
-        checkIfEntitledToABookstoreDiscount(2,1);
+        checkIfEntitledToABookstoreDiscount(4,1);
 
 
         System.out.println("---------------------------------------------------------------------");
         System.out.println("Is there money saved from the bookstore discount.");
-        calculateBookstoreDiscount(false,2, 1);
+        calculateBookstoreDiscount(3, 1);
+
 
         System.out.println("---------------------------------------------------------------------");
 
@@ -74,20 +75,22 @@ public class Discount {
             System.out.println("You get a bookstore discount!");
             moneySavedFromBookStoreDiscounts = ((23 + 28 + 15 + 18) * bookStoreDiscount);
         } else {
-            System.out.println("No discount!");
+            System.out.println("No discount because you didn't buy enough books!");
         }
       return 0;
     }
 
-    public static int calculateBookstoreDiscount(boolean entitledToABookstoreDiscount, int nonFictionBooks, int fictionBooks) {
+    public static int calculateBookstoreDiscount( int nonFictionBooks, int fictionBooks) {
         double bookStoreDiscount = 0.10;
+        boolean entitledToABookstoreDiscount;
         double moneySavedFromBookStoreDiscounts;
 
         if ((nonFictionBooks >2) && (fictionBooks >0)) {
             entitledToABookstoreDiscount = true;
             moneySavedFromBookStoreDiscounts = ((23 + 28 + 15 + 18) * bookStoreDiscount);
+            System.out.println("Total money saved from bus ticket: " + (moneySavedFromBookStoreDiscounts));
         } else {
-            System.out.println("No money saved from purchasing the books!");
+            System.out.println("There is NO money saved from purchasing the books!");
         }
         return 0;
     }
