@@ -27,7 +27,6 @@ public class Discount {
         System.out.println("---------------------------------------------------------------------");
 
         double moneySavedFromBusTicketsDiscounts = (2 * ((busTicketFullPrice * seniorDiscount) + (busTicketFullPrice * dogDiscount) + (busTicketFullPrice * studentDiscount)));
-
         System.out.println("Total money saved from all discounts: " + (moneySavedFromBusTicketsDiscounts));
 
     }

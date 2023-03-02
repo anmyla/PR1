@@ -1,7 +1,5 @@
 package Exercises;
-
 import java.util.Scanner;
-
 public class GradingTable {
     public static void main(String[] args) {
 
@@ -12,8 +10,6 @@ public class GradingTable {
         System.out.println("Your grade is:");
         getGrades(points);
     }
-
-
     private static int getGrades(int points) {
         if ((points == 89) || (points > 90)) {
             System.out.println("Outstanding");
@@ -26,7 +22,6 @@ public class GradingTable {
         } else {
             System.out.println("Fail");
         }
-
         return points;
     }
 }
