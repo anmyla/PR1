@@ -16,12 +16,12 @@ public class Discount {
 
         System.out.println("---------------------------------------------------------------------");
         System.out.println("Are they entitled to ge a bookstore discount?");
-        checkIfEntitledToABookstoreDiscount(4,1);
+        checkIfEntitledToABookstoreDiscount(2,1);
 
 
         System.out.println("---------------------------------------------------------------------");
         System.out.println("Is there money saved from the bookstore discount.");
-        calculateBookstoreDiscount(3, 1);
+        calculateBookstoreDiscount(2, 1);
 
 
         System.out.println("---------------------------------------------------------------------");
