@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Conditionals2 {
     public static void main(String[] args) {
         Scanner scanner1 = new Scanner(System.in);
-        System.out.println( "How many non-fiction books you bought? ");
+        System.out.println("How many non-fiction books did you buy? ");
         int nonFiction = scanner1.nextInt();
 
         Scanner scanner2 = new Scanner(System.in);
-        System.out.println( "How many fiction books you bought? ");
+        System.out.println("How many fiction books did you buy? ");
         int fiction = scanner2.nextInt();
 
         checkDiscount(nonFiction, fiction);
