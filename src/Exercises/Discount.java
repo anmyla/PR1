@@ -9,14 +9,13 @@ public class Discount {
         double bookStoreDiscount = 0.10;
 
 
-
         System.out.println("Who is entiled to get a bus ticket discount?");
         checkIfEntitledToABusTicketDiscount(true, true, true);
 
 
         System.out.println("---------------------------------------------------------------------");
         System.out.println("Are they entitled to ge a bookstore discount?");
-        checkIfEntitledToABookstoreDiscount(2,1);
+        checkIfEntitledToABookstoreDiscount(2, 1);
 
 
         System.out.println("---------------------------------------------------------------------");
@@ -64,28 +63,28 @@ public class Discount {
     }
 
     //------------------------------------------------------------------------------------------------------------//
-    public static int checkIfEntitledToABookstoreDiscount( int nonFictionBooks, int fictionBooks) {
+    public static int checkIfEntitledToABookstoreDiscount(int nonFictionBooks, int fictionBooks) {
         double bookStoreDiscount = 0.10;
         boolean entitledToABookstoreDiscount;
         double moneySavedFromBookStoreDiscounts;
 
 
-        if ((nonFictionBooks >2) && (fictionBooks >0)) {
+        if ((nonFictionBooks > 2) && (fictionBooks > 0)) {
             entitledToABookstoreDiscount = true;
             System.out.println("You get a bookstore discount!");
             moneySavedFromBookStoreDiscounts = ((23 + 28 + 15 + 18) * bookStoreDiscount);
         } else {
             System.out.println("No discount because you didn't buy enough books!");
         }
-      return 0;
+        return 0;
     }
 
-    public static int calculateBookstoreDiscount( int nonFictionBooks, int fictionBooks) {
+    public static int calculateBookstoreDiscount(int nonFictionBooks, int fictionBooks) {
         double bookStoreDiscount = 0.10;
         boolean entitledToABookstoreDiscount;
         double moneySavedFromBookStoreDiscounts;
 
-        if ((nonFictionBooks >2) && (fictionBooks >0)) {
+        if ((nonFictionBooks > 2) && (fictionBooks > 0)) {
             entitledToABookstoreDiscount = true;
             moneySavedFromBookStoreDiscounts = ((23 + 28 + 15 + 18) * bookStoreDiscount);
             System.out.println("Total money saved from bus ticket: " + (moneySavedFromBookStoreDiscounts));

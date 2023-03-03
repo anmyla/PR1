@@ -18,7 +18,7 @@ public class DiscountClassSolution {
 
         int fiction = 2;
         int nonFiction = 2;
-        double fullBookPrice = 15 + 18 +23 +28;
+        double fullBookPrice = 15 + 18 + 23 + 28;
 
         double totalBookPriceDiscounted = getBookDiscountPrice(fullBookPrice, fiction, nonFiction);
 
@@ -27,7 +27,8 @@ public class DiscountClassSolution {
         double totalSavedMoney = (totalBusPriceNoDiscount + fullBookPrice) - (totalBusPriceDiscounted + totalBookPriceDiscounted);
         System.out.println("They saved a total of: " + totalSavedMoney + " from all the discounts they got.");
     }
-    public static double getBusDiscountedPrice (double fullBusPrice, boolean isSenior, boolean isDog, boolean isStudent) {
+
+    public static double getBusDiscountedPrice(double fullBusPrice, boolean isSenior, boolean isDog, boolean isStudent) {
         double discountedPrice;
         if (isSenior) {
             discountedPrice = fullBusPrice * 0.85;
@@ -35,19 +36,17 @@ public class DiscountClassSolution {
             discountedPrice = fullBusPrice * 0.8;
         } else if (isStudent) {
             discountedPrice = fullBusPrice * 0.9;
-        }
-        else {
+        } else {
             discountedPrice = fullBusPrice;
         }
         return discountedPrice;
     }
 
-    public static double getBookDiscountPrice(double fullBookPrice, int fiction, int nonFiction){
+    public static double getBookDiscountPrice(double fullBookPrice, int fiction, int nonFiction) {
         double discountedBookPrice;
         if ((fiction >= 1) && (nonFiction > 2)) {
             discountedBookPrice = fullBookPrice * 0.9;
-        }
-        else {
+        } else {
             discountedBookPrice = fullBookPrice;
         }
         return discountedBookPrice;
