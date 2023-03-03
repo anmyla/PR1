@@ -32,7 +32,7 @@ public class Discount {
     }
 
     //-------------------------------------all my functions here-----------------------------//
-    public static void checkIfEntitledToABusTicketDiscount(boolean isEdnaASenior, boolean isPaulAStudent, boolean isLolaADog) {
+    public static double checkIfEntitledToABusTicketDiscount(boolean isEdnaASenior, boolean isPaulAStudent, boolean isLolaADog) {
         double seniorDiscount = 0.15;
         double dogDiscount = 0.20;
         double studentDiscount = 0.10;
@@ -60,6 +60,7 @@ public class Discount {
             System.out.println("No discount!");
         }
         System.out.println("Total money saved from bus tickets: " + moneySavedFromBusTicket);
+        return moneySavedFromBusTicket;
     }
 
     //------------------------------------------------------------------------------------------------------------//
@@ -94,6 +95,7 @@ public class Discount {
         return 0;
     }
 }
+
 
 //        boolean isEdnaASenior = true;
 //        boolean isPaulAStudent = true;
