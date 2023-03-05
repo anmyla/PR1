@@ -1,5 +1,4 @@
-package typeConversion;
-import jdk.swing.interop.SwingInterOpUtils;
+package TypeConversion;
 
 import java.util.Scanner;
 

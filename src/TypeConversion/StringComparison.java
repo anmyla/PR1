@@ -1,4 +1,4 @@
-package typeConversion;
+package TypeConversion;
 
 import java.util.Scanner;
 

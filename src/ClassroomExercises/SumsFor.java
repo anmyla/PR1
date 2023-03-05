@@ -1,4 +1,4 @@
-package ClassExercises;
+package ClassroomExercises;
 
 public class SumsFor {
     public static void main(String[] args) {

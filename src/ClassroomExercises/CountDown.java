@@ -1,4 +1,4 @@
-package ClassExercises;
+package ClassroomExercises;
 
 public class CountDown {
 

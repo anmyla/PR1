@@ -1,4 +1,4 @@
-package ClassExercises;
+package ClassroomExercises;
 
 public class DivisionWithReturn {
     public static void main(String[] args) {
