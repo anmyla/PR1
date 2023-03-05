@@ -1,4 +1,4 @@
-package Exercises;
+package ClassExercises;
 public class Conditionals {
     //Solutions to the exercises- done with the whole class
 

@@ -1,4 +1,4 @@
-package Exercises;
+package HomeExercises;
 
 public class Discount {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package Exercises;
-
-import java.util.Scanner;
+package HomeExercises;
 
 public class WinterTires {
     public static void main(String[] args) {

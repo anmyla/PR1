@@ -1,4 +1,4 @@
-package Exercises;
+package HomeExercises;
 
 import java.util.Scanner;
 
@@ -6,8 +6,8 @@ public class Rectangle {
     public static void main(String[] args) {
 
         //-----with predefined values----------
-        calculatePerimeter(34, 67);
-        calculateArea(34, 67);
+        calculatePerimeter(3, 9);
+        calculateArea(3, 9);
         System.out.println();
 
 
@@ -36,3 +36,4 @@ public class Rectangle {
         return area;
     }
 }
+

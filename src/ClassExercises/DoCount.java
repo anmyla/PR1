@@ -1,4 +1,4 @@
-package Exercises;
+package ClassExercises;
 
 public class DoCount {
     public static void main(String[] args) {
