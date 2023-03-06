@@ -26,6 +26,14 @@ public class FirstArrays {
             System.out.println(itemInArray);
         }
 
+        //-----for each loop-----------------------------
+        System.out.println("--------FOR EACH LOOP using First Array--------");
+        for (int element : firstArray) {
+            element = element + 12;
+            System.out.println(element);
+        }
+
+
         System.out.println("--------Second Array--------");
         for (int i = 0; i < secondArray.length; i++) {
             int itemIn2Array = secondArray[i];
