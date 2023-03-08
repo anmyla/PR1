@@ -14,19 +14,21 @@ public class SumAndVowels {
 
             if (number > 0) {
                 sum = sum + number;
-                System.out.println(sum + " Sum");
+                System.out.println(sum + " Current Sum ");
             }
             if (number == 2) {
                 sum = sum * 2;
                 System.out.println(sum + " Sum is doubled");
-            }
-            if (number == 3) {
+            } else if (number == 3) {
                 sum = sum * 3;
                 System.out.println(sum + " Sum is tripled");
-            }
-            if (number == 22) {
+            } else if (number == 22) {
                 sum = sum / 2;
                 System.out.println(sum + " Sum is halved");
+            }
+            else  {
+                sum = sum + number;
+                System.out.println( sum + " End Sum");
             }
         }
     }

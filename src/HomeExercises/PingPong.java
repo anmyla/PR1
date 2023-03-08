@@ -12,19 +12,17 @@ public class PingPong {
         int negative = 0;
 
         while (x < 100) {
-            if ((x % 2) == 0) {
-                System.out.println("Ping");
-                ping = ping + 1;
-            }
-            if ((x % 3) == 0){
-                System.out.println("Pong");
-                pong = pong + 1;
-            }
             if ((x % 6) == 0) {
                 System.out.println("Ping pong");
                 pingpong = pingpong + 1;
+            } else if ((x % 3) == 0){
+                System.out.println("Pong");
+                pong = pong + 1;
+            } else if ((x % 2) == 0) {
+                System.out.println("Ping");
+                ping = ping + 1;
             }
-            if (!((x % 2) == 0)  && !((x % 3) == 0) && !((x % 6) == 0)) {
+            else {
                 System.out.println("-");
                 negative = negative + 1;
             }
