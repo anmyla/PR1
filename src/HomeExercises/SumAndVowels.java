@@ -4,33 +4,34 @@ import java.util.Scanner;
 
 public class SumAndVowels {
     public static void main(String[] args) {
-        int sum = 0;
-        int number = 1;
+        double sum = 0;
+        double number = 1;
 
         while (!(number <= 0)) {
             Scanner scanner1 = new Scanner(System.in);
             System.out.println("Enter a number: ");
-            number = scanner1.nextInt();
+            number = scanner1.nextDouble();
 
-            if (number > 0) {
+            if (number != 0) {
                 sum = sum + number;
-                System.out.println(sum + " Current Sum ");
+                System.out.println(sum + " = current sum");
             }
             if (number == 2) {
                 sum = sum * 2;
-                System.out.println(sum + " Sum is doubled");
+                System.out.println("Since you entered 2, the current sum is doubled: " + sum);
+
             } else if (number == 3) {
                 sum = sum * 3;
-                System.out.println(sum + " Sum is tripled");
+                System.out.println("Since you entered 3, the current sum is tripled: " + sum);
             } else if (number == 22) {
                 sum = sum / 2;
-                System.out.println(sum + " Sum is halved");
+                System.out.println("Since you entered 22, the current sum is halved: " + sum);
             }
             else  {
-                sum = sum + number;
-                System.out.println( sum + " End Sum");
+                System.out.println( sum + " = is the Total of all sums so far.");
             }
         }
+        System.out.println("Since you entered 0, the END TOTAL is = " + sum);
     }
 }
 
