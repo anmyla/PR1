@@ -1,20 +1,26 @@
 package HomeExercises;
 
-public class MultiplicationTable1 {
-    public static int[][] multiTable(int row, int col)
-    {
-        int length = 10;
-        int [][] yes = new int[row][col];
-
-        for (row = 1; row <= yes.length ; row++)
+public class MultiplicationTable {
+    public static void main(String[] args)  {
+        int[][] arrayMultiplicationTable = new int[10][10];
+        int row = 10, column = 10;
+        for(int a = 0; a < arrayMultiplicationTable.length; a++)
         {
-            for (int column = 1; column <= yes[row].length; column++)
+            for(int b = 0; b < arrayMultiplicationTable[a].length; b++)
             {
-                yes[row-1][column-1] = (row)*(column);
+                arrayMultiplicationTable[a][b] = row * column;
+                column = column + 1;
             }
-
+            row = row + 1;
+            column = 10;
         }
-        return yes;
+        for(int a = 0; a < arrayMultiplicationTable.length; a++)
+        {
+            for(int b = 0; b < arrayMultiplicationTable[a].length; b++)
+            {
+                System.out.print(" " + arrayMultiplicationTable[a][b] + "\t ");
+            }
+            System.out.print("\n");
+        }
     }
-
 }
