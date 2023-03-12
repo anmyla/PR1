@@ -14,8 +14,7 @@ public class HeartArray {
             for (int item : row) {
                 if (item == 0) {
                     System.out.print(" ");
-                }
-                else {
+                } else {
                     System.out.print("X");
                 }
             }

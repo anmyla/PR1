@@ -3,7 +3,8 @@ package HomeExercises;
 public class MultiplicationTable {
     public static void main(String[] args)  {
         int[][] arrayMultiplicationTable = new int[10][10];
-        int row = 10, column = 10;
+        int row = 10;
+        int column = 10;
         for(int a = 0; a < arrayMultiplicationTable.length; a++)
         {
             for(int b = 0; b < arrayMultiplicationTable[a].length; b++)
@@ -18,9 +19,9 @@ public class MultiplicationTable {
         {
             for(int b = 0; b < arrayMultiplicationTable[a].length; b++)
             {
-                System.out.print(" " + arrayMultiplicationTable[a][b] + "\t ");
+                System.out.print(" " + arrayMultiplicationTable[a][b] + "  ");
             }
-            System.out.print("\n");
+           System.out.println();
         }
     }
 }

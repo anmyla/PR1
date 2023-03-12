@@ -38,6 +38,7 @@ public class ArrayLottery {
             while (number > 49 || number < 1) {
                 number = (int) (Math.random() * 100);
             }
+            System.out.println(number);
             randomNumbers[i] = number;
         }
         return randomNumbers;
