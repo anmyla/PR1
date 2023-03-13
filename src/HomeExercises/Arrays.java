@@ -16,8 +16,10 @@ public class Arrays {
         }
     }
 
-    public static boolean containsNumber(int[] numbers, int n){
-        return false;
-    }
+//    public static boolean containsNumber(int[] numbers, int n){
+//        boolean check;
+//        check = number
+//        return false;
+//    }
 
 }

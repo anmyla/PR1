@@ -9,7 +9,7 @@ public class Palindromes {
                         "never odd or even",
                         "Otto",
                         "Anna",
-                        "I don't really understand this exercise!" //was able to make it through researching solutions from the internet
+                        "I don't really understand this exercise!" //was able to make it but with a lot of help from Google
                 };
 
         for (String i : palindromes) { // saving the elements of the "palindromes array" in data type String i
