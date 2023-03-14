@@ -2,48 +2,32 @@ package ExercisesPart2;
 
 import java.util.Scanner;
 
-public class BankomatBedienung {
+public class Bankomat {
     public static void main(String[] args) {
-        int choice = 0;
-        balanceCheck();
-        do {
-            transaction();
-        } while (choice > 0 && choice < 5);
-    }
-
-    public static double balanceCheck() {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input1 = new Scanner(System.in);
         System.out.println("Please enter your balance: " );
-        double balance = scanner.nextDouble();
-        return balance;
-    }
+        double balance = input1.nextDouble();
 
-    public static int option() {
         System.out.println("Menu: \n" +
                 "1. Deposit \n" +
                 "2. Withdraw \n" +
                 "3. Check Balance \n" +
                 "4. Exit" );
 
-        int choice = 0;
+        int choice;
         do {
-            Scanner input1 = new Scanner(System.in);
+            Scanner input2 = new Scanner(System.in);
             System.out.println("Enter your choice: " );
             choice = input1.nextInt();
         } while (choice < 1 || choice > 4);
-        return choice;
-    }
 
-    public static void transaction() {
-        Scanner input2 = new Scanner(System.in);
-        int choice;
-        choice = option();
-        double balance;
-        balance = balanceCheck();
 
-        if (choice < 4) {
+        do {
             switch (choice) {
+
+
                 case 1:
+                    Scanner input2 = new Scanner(System.in);
                     System.out.println("Enter the amount you wish to deposit: " );
                     double deposit = input2.nextDouble();
                     balance = balance + deposit;
@@ -54,15 +38,20 @@ public class BankomatBedienung {
                             "2. Withdraw \n" +
                             "3. Check Balance \n" +
                             "4. Exit" );
-                    choice = input2.nextInt();
+                    do {
+                        System.out.println("Enter your choice: " );
+                        choice = input2.nextInt();
+                    } while (choice < 1 || choice > 4);
                     break;
+
                 case 2:
+                    Scanner input3 = new Scanner(System.in);
                     System.out.println("Enter the amount you wish to withdraw: " );
-                    double withdraw = input2.nextDouble();
+                    double withdraw = input3.nextDouble();
                     while (balance < withdraw) {
                         System.out.println("Insufficient Balance! Your available balance is only: " + balance + " Euro." );
                         System.out.println("Enter the amount you wish to withdraw: " );
-                        withdraw = input2.nextDouble();
+                        withdraw = input3.nextDouble();
                     }
                     balance = balance - withdraw;
                     System.out.println("Withdrawal successful! Your remaining balance is:" + balance + " Euro." );
@@ -72,9 +61,14 @@ public class BankomatBedienung {
                             "2. Withdraw \n" +
                             "3. Check Balance \n" +
                             "4. Exit" );
-                    choice = input2.nextInt();
+                    do {
+                        System.out.println("Enter your choice: " );
+                        choice = input3.nextInt();
+                    } while (choice < 1 || choice > 4);
                     break;
+
                 case 3:
+                    Scanner input4 = new Scanner(System.in);
                     System.out.println("Your current balance is: " + balance + " Euro." );
                     System.out.println("Please enter your choice if you wish to make another transaction: " );
                     System.out.println("Menu: \n" +
@@ -82,12 +76,14 @@ public class BankomatBedienung {
                             "2. Withdraw \n" +
                             "3. Check Balance \n" +
                             "4. Exit" );
-                    choice = input2.nextInt();
+                    do {
+                        System.out.println("Enter your choice: " );
+                        choice = input4.nextInt();
+                    } while (choice < 1 || choice > 4);
                     break;
 
             }
-        } else {
-            System.out.println("Thank you for banking with us! Goodbye!" );
-        }
+        } while (choice < 4) ;
+        System.out.println("Thanks for banking with us! Goodbye!");
     }
 }
