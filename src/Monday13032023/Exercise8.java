@@ -9,11 +9,11 @@ public class Exercise8 {
         System.out.println("Enter a number: ");
         int number = scanner.nextInt();
         int sum = 0;
-        int n = 1;
+        int i = 1;
 
-        while (n <= number) {
-            sum = sum + n;
-            n++;
+        while (i <= number) {
+            sum = sum + i;
+            i++;
         }
         System.out.println("The sum of 1 to " + number + " is " + sum);
     }

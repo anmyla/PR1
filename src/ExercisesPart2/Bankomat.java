@@ -9,7 +9,7 @@ public class Bankomat {
         double balance = scanner1.nextDouble();
 
         int choice = 0;
-        System.out.println("Please enter your choice if you wish to make another transaction: " );
+        System.out.println("Please enter your choice: " );
         System.out.println("Menu: \n" +
                 "1. Deposit \n" +
                 "2. Withdraw \n" +
@@ -84,19 +84,19 @@ public class Bankomat {
         System.out.println("Thanks for banking with us! Goodbye!");
     }
 
-    public static int menu (){
-        int choice = 0;
-        System.out.println("Please enter your choice if you wish to make another transaction: " );
-        System.out.println("Menu: \n" +
-                "1. Deposit \n" +
-                "2. Withdraw \n" +
-                "3. Check Balance \n" +
-                "4. Exit" );
-        do {
-            Scanner scanner2 = new Scanner(System.in);
-            System.out.println("Enter your choice: " );
-            choice = scanner2.nextInt();
-        } while (choice < 1 || choice > 4);
-        return choice;
-    }
+//    public static int menu (){
+//        int choice = 0;
+//        System.out.println("Please enter your choice if you wish to make another transaction: " );
+//        System.out.println("Menu: \n" +
+//                "1. Deposit \n" +
+//                "2. Withdraw \n" +
+//                "3. Check Balance \n" +
+//                "4. Exit" );
+//        do {
+//            Scanner scanner2 = new Scanner(System.in);
+//            System.out.println("Enter your choice: " );
+//            choice = scanner2.nextInt();
+//        } while (choice < 1 || choice > 4);
+//        return choice;
+//    }
 }
