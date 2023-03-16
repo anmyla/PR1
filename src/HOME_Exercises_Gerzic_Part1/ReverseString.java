@@ -1,4 +1,4 @@
-package HOME_Exercises_Gerzic;
+package HOME_Exercises_Gerzic_Part1;
 
 import java.util.Scanner;
 
