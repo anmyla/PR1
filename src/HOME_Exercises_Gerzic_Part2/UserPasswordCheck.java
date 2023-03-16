@@ -9,7 +9,7 @@ public class UserPasswordCheck {
         String unInput;
         String pwInput;
 
-        int atempts = 0;
+        int attempts = 0;
         do {
             Scanner input = new Scanner(System.in);
             System.out.println("Enter your username: ");
@@ -23,9 +23,9 @@ public class UserPasswordCheck {
             } else if (!(password.equals(pwInput))) {
                 System.out.println("Wrong password! ");
             }
-            atempts = atempts + 1;
-        } while (atempts < 3 && (!(userName.equals(unInput)) || !(password.equals(pwInput))));
-        if (atempts >= 3) {
+            attempts = attempts + 1;
+        } while (attempts < 3 && (!(userName.equals(unInput)) || !(password.equals(pwInput))));
+        if (attempts >= 3) {
             System.out.println("You've reached the maximum number of attempts! For security purposes, the program will now close.");
         } else {
             System.out.println("Authentication successful!");
