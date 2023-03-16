@@ -2,7 +2,7 @@ package CLASS_Wed_1503;
 
 import java.util.Scanner;
 
-public class Airplane {
+public class Continue_Break_Airplane {
     public static void main(String[] args) {
         boolean isA380 = false;
         Scanner scanner = new Scanner(System.in);

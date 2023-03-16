@@ -2,7 +2,7 @@ package CLASS_Wed_1503;
 
 import java.util.Scanner;
 
-public class Elevator {
+public class Continue_Break_Elevator {
     public static void main(String[] args) {
         boolean aHouse = false;
         Scanner scanner = new Scanner(System.in);

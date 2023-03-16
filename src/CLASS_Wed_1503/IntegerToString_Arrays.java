@@ -1,6 +1,6 @@
 package CLASS_Wed_1503;
 import  java.util.Arrays;
-public class ArraysExercise {
+public class IntegerToString_Arrays {
     public static void main(String[] args) {
         int evenNumber = 2;
         int indexCounter = 0;

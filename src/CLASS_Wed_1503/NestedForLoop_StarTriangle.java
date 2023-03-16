@@ -1,6 +1,6 @@
 package CLASS_Wed_1503;
 
-public class Exercises2 {
+public class NestedForLoop_StarTriangle {
     public static void main(String[] args) {
 
         for (int i = 0; i <= 5; ++i) {

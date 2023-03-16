@@ -1,6 +1,6 @@
 package CLASS_Wed_1503;
 
-public class Exercise1 {
+public class ForLoop_Modulo {
     public static void main(String[] args) {
 
         int num = 30;

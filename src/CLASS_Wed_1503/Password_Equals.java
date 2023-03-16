@@ -2,7 +2,7 @@ package CLASS_Wed_1503;
 
 import java.util.Scanner;
 
-public class Password2 {
+public class Password_Equals {
     public static void main(String[] args) {
         String password = "Geheim";
         String input = "";
