@@ -1,6 +1,5 @@
-package HOME_Exercises_Gerzic;
+package HOME_Exercises_Gerzic_Part1;
 
-import java.util.Locale;
 import java.util.Scanner;
 public class Programmauswahlmenue { // UGLY program but it works!!!
     public static void main(String[] args) {
