@@ -11,7 +11,10 @@ public class ArraysExercises {
 //        arrayExercises4();
 //        arrayExercises5();
 //        arrayExercises6();
-        arrayExercises8();
+//        arrayExercises7();
+//        arrayExercises8();
+//        arrayExercises9();
+        arrayExercises10();
     }
 
     public static void arrayExercises1() { // prints out each element in each position in the array
@@ -33,7 +36,7 @@ public class ArraysExercises {
                 greatestNumber = sample2[i];
             }
         }
-        System.out.println("The greatest highest number in Sample2 Array is: " + greatestNumber);
+        System.out.println("The highest number in Sample2 Array is: " + greatestNumber);
     }
 
     public static void arrayExercises3() { // prints out the length of the string in each element of the array
@@ -90,7 +93,28 @@ public class ArraysExercises {
         }
     }
 
-    public static void arrayExercises7() {
+    public static void arrayExercises7() { //prints out elements that start with a particular letter
+        String[] sample7 = new String[]
+                {
+                        "Banana",
+                        "Pineapple",
+                        "Mango",
+                        "Guava",
+                        "Avocado",
+                        "Apple",
+                        "Atis",
+                        "Durian",
+                        "Aratilis",
+                        "Jackfruit",
+                };
+        String checker = "";
+        String letter = "a";
+        for (int i = 0; i < sample7.length; i++) {
+            checker = sample7[i];
+            if (checker.toLowerCase().startsWith(letter)) {
+                System.out.println("The element " + checker + " at postion : " + i + " starts with letter a");
+            }
+        }
     }
 
     public static void arrayExercises8() { //get user inputs for elements in the array and prints out sum
@@ -106,10 +130,39 @@ public class ArraysExercises {
             System.out.println("The element in position " + i + " is " + sample8[i]);
             sum = sum + sample8[i];
         }
-        System.out.println("The sum of all the numbers entered is: " +sum);
+        System.out.println("The sum of all the numbers entered is: " + sum);
+    }
+
+    public static void arrayExercises9() { // checks and prints out the lowest number in the array
+        int[] sample9 = new int[]
+                {5, 6, 67, 3, 2, 8, 4};
+        int highestNumber = 0;
+        int lowestNumber = 0;
+        for (int i = 0; i < sample9.length; i++) {
+            if (sample9[i] > highestNumber) {
+                highestNumber = sample9[i];
+            }
+            lowestNumber = highestNumber;
+            for (int j = 0; j < sample9.length; j++) {
+                if (sample9[j] < lowestNumber) {
+                    lowestNumber = sample9[j];
+                }
+            }
+        }
+        System.out.println("The lowest number in Sample9 Array is: " + lowestNumber);
+    }
+
+    public static void arrayExercises10() { // adds all the numbers in the array and compute average
+        double[] sample10 = new double[]
+                {5.2, 6.4, 67.2, 32.1, 8.2};
+        double sum = 0;
+        for (int i = 0; i < sample10.length; i++) {
+                sum = sum+sample10[i];
+        }
+        double average = sum /sample10.length;
+        System.out.println("The average of all the numbers in Sample2 Array is: " + average);
     }
 }
-
 
 //1. write a program that generates an array of 10 integers, and then
 //element by element (not all at once) in the console.
