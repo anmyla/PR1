@@ -42,7 +42,7 @@ public class TicTacToe {
 
     public static void initializePlayField(char[][] playField) {
         for (int row = 0; row < playField.length; row++) {
-            for (int col = 0; col < playField[0].length; col++) {
+            for (int col = 0; col < playField[row].length; col++) {
                 playField[row][col] = ' ';
             }
         }
@@ -53,7 +53,7 @@ public class TicTacToe {
         System.out.println("   0    1    2");
         for (int row = 0; row < playField.length; row++) {
             System.out.print(row);
-            for (int col = 0; col < playField[0].length; col++) {
+            for (int col = 0; col < playField[row].length; col++) {
                 System.out.print("[ " + playField[row][col] + " ]");
             }
             System.out.println();
@@ -64,7 +64,7 @@ public class TicTacToe {
         boolean isEmpty;
         int emptyBoxCounter = 0;
         for (int row = 0; row < playField.length; row++) {
-            for (int col = 0; col < playField[0].length; col++) {
+            for (int col = 0; col < playField[row].length; col++) {
                 if (playField[row][col] == ' ') {
                     isEmpty = true;
                     emptyBoxCounter++;
