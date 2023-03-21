@@ -1,4 +1,4 @@
-package CLASS_Mon_2003;
+package TicTacToe;
 
 public class MultiDimensionalArray {
     public static void main(String[] args) {

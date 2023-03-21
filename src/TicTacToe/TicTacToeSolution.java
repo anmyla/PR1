@@ -1,4 +1,4 @@
-package CLASS_Mon_2003;
+package TicTacToe;
 import java.util.Scanner;
 public class TicTacToeSolution {
 
