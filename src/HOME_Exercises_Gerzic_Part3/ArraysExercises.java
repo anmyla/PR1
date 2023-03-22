@@ -13,8 +13,8 @@ public class ArraysExercises {
 //        arrayExercises6();
 //        arrayExercises7();
 //        arrayExercises8();
-//        arrayExercises9();
-        arrayExercises10();
+        arrayExercises9();
+//        arrayExercises10();
     }
 
     public static void arrayExercises1() { // prints out each element in each position in the array
@@ -135,7 +135,7 @@ public class ArraysExercises {
 
     public static void arrayExercises9() { // checks and prints out the lowest number in the array
         int[] sample9 = new int[]
-                {5, 6, 67, 3, 2, 8, 4};
+                {10, 6, 67, 3, 2, 8, 4};
         int highestNumber = 0;
         int lowestNumber = 0;
         for (int i = 0; i < sample9.length; i++) {

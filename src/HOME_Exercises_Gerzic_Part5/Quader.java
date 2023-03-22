@@ -1,4 +1,4 @@
-package HOME_Exercises_Gerzic_Part4;
+package HOME_Exercises_Gerzic_Part5;
 
 public class Quader {
     double length;
