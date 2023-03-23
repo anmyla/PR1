@@ -1,30 +1,36 @@
 package HOME_Exercises_Gerzic_Part5;
 
-public class Quader {
+public class Cuboid {
     double length;
     double width;
     double height;
 
-    public static double Area(double length, double width) {
+    public static double calculateArea(double length, double width) {
         double area;
         return area = length * width;
     }
 
-    public static double scale(double factor, double length, double width, double height) {
+
+    public static double calculateVolume(double length, double width, double height) {
+        double volume;
+        volume = length * width * height;
+        return volume;
+    }
+
+    public static double calculateSurface(double length, double width, double height) {
+        double surface;
+        surface = (2* (length * width) + (height * width) + (height * length));
+        return surface;
+    }
+
+    public static double scaleTo(int factor, double length, double width, double height) {
         double scaledLength = length * factor;
         double scaledWidth = width * factor;
         double scaledHeight = height * factor;
-        return factor;
-    }
-
-    public static void setVolume(double length, double width, double height) {
-        double volume;
-        volume = length * width * height;
-    }
-
-    public static void setSurface(double length, double width, double height) {
-        double surface;
-        surface = (2* (length * width) + (height * width) + (height * length));
+        double scaledVolume = scaledHeight * scaledWidth * scaledLength;
+        double scaledArea = scaledLength * scaledWidth;
+        double scaledSurface =  (2* (scaledLength * scaledWidth) + (scaledLength * scaledHeight) + (scaledHeight * scaledWidth));
+        return scaledVolume;
     }
 
 }
