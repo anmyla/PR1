@@ -23,12 +23,15 @@ public class MultidimensionalArrayExercises {
 
         for (double[] col : findSum) {
             for (double row : col) {
+                System.out.print(row + " ");
                 sum = sum + row;
             }
+            System.out.println();
         }
+        System.out.println();
         System.out.println("The sum of all the numbers in the array is: " + sum);
         System.out.println();
-        System.out.println();
+        System.out.println("------------------------------------------------------------------");
     }
 
     public static void multiArraySpiel() { //1.2 Übung 2 – MultiArray-Spielereien
@@ -66,6 +69,7 @@ public class MultidimensionalArrayExercises {
         System.out.println("The average of all the numbers in the array is: " + (sum / counter));
         System.out.println("The highest value in the array is: " + greatestValue);
         System.out.println("The lowest value in the array is: " + lowestValue);
+        System.out.println("------------------------------------------------------------------");
     }
 
     public static void calculateSumOfEachRow() { //Übung 3 – Einzelne Summen vergleichen
@@ -108,6 +112,7 @@ public class MultidimensionalArrayExercises {
             System.out.println("The sums the " +sumOfEachRow.length+ " one-dimensional arrays are not equal.");
             }
         System.out.println("The row which contains the greatest sum is row: " + rowWithGreatestSum + " with the value of: " + greatestNumber);
+        System.out.println("------------------------------------------------------------------");
     }
 
     public static void threeDimensionalArray() {
