@@ -11,7 +11,7 @@ public class TicTacToe {
         initializePlayField(playField);
         printPlayField(playField);
 
-        while (!isGameOver(playField)){
+        do {
             System.out.println("Player " + currentPlayer + "'s turn!");
             System.out.println("Choose a row (0,1,2)? : ");
             int row = input.nextInt();
@@ -29,7 +29,7 @@ public class TicTacToe {
             } else {
                 System.out.println("Invalid move. Try again!");
             }
-        }
+        }while (!isGameOver(playField));
 
         char winner = getWinner(playField);
         if (winner != ' ') {
@@ -89,8 +89,8 @@ public class TicTacToe {
 
     public static char getWinner(char[][] playField) {
         for (int i = 0; i < 3; i++) {
-            // check rows
-            if (playField[i][0] == playField[i][1] && playField[i][0] == playField[i][2] && playField[i][0] != ' ') {
+             //  check rows
+            if ((playField[i][0] == playField[i][1]) && (playField[i][0] == playField[i][2]) && (playField[i][0] != ' ')) {
                 return playField[i][0];
             }
             // check columns
