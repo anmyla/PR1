@@ -35,11 +35,9 @@ public class Auto {
         this.ps = 0;
     }
 
-
-
-    public static String kindOfCar(String make, String model, int ps) {
-        return "Make: " + make + " Model: " + model + " Year: " +ps;
-    }
+//    public static String kindOfCar(String make, String model, int ps) {
+//        return "Make: " + make + " Model: " + model + " Year: " +ps;
+//    }
 
     public String getMake(){
         return make;

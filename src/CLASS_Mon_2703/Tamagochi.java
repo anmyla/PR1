@@ -7,8 +7,13 @@ public class Tamagochi {
     int y;
     int foodStore;
 
+    public Tamagochi(int x, int y, int foodStore) {
+        this.x = x;
+        this.y = y;
+        this.foodStore = foodStore;
+    }
 
-    public int foodInventory(int food){
+    public int feedTamagochi(int food){
         this.foodStore = this.foodStore + food;
         return foodStore;
     }

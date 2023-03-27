@@ -14,24 +14,23 @@ public class Drucker {
     }
 
     public String methodPrint(String zeichenKette) {
-        System.out.println("String: " + zeichenKette);
+        System.out.println("String: ");
         return zeichenKette;
     }
 
     public int methodPrint(int zahl) {
-        System.out.println("Int: " + zahl);
+        System.out.println("Int: ");
         return zahl;
     }
 
     public double methodPrint(double fliessKommaZahl) {
-        System.out.println("Double: " + fliessKommaZahl);
+        System.out.println("Double: ");
         return fliessKommaZahl;
     }
 
     public boolean methodPrint(boolean print) {
-        System.out.println("Boolean: " + print);
+        System.out.println("Boolean: ");
         return print;
     }
-
 
 }
