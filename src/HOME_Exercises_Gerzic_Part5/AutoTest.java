@@ -10,8 +10,6 @@ public class AutoTest {
         //-----toString Method-------
         System.out.println(car1.toString());
 
-
-
         //-----stepOnGas Method ----------
         System.out.println("Increased speed by 100% : " + car1.stepOnGas(70,2));
 
@@ -26,14 +24,10 @@ public class AutoTest {
         System.out.println(Auto.getMake());
         System.out.println(Auto.getModel());
 
-
         //-------2nd Instance-------
         System.out.println("-------------2nd Instance--------------");
         Auto car2 = new Auto();
 
         System.out.println(car2.kindOfCar("Porsche", "Cayenne", 2019));
-
-
-
     }
 }
