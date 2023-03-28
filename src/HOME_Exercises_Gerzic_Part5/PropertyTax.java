@@ -1,24 +1,68 @@
 package HOME_Exercises_Gerzic_Part5;
 
+import java.util.Scanner;
+
 public class PropertyTax {
-    public static void main(String[] args) {
+    int[][] property = new int[][]{
+            {1, 30, 40},
+            {1, 20, 50},
+            {3, 10, 30}};
 
 
-        propertyInfo();
-        calculatePayableTax();
-
-    }
-
-    public static void propertyInfo() {
-        int[][] property = new int[][]{
-                {1, 30, 40},
-                {1, 20, 50},
-                {3, 10, 30}};
+    public void propertyInfo() {
 
         System.out.println("  Type " + " Length " + "  Width ");
         for (int i = 0; i < property.length; i++) {
             for (int j = 0; j < property[i].length; j++) {
                 System.out.print("[  " + property[i][j] + "  ]");
+            }
+            System.out.println();
+        }
+    }
+
+    public void propertyInfoDynamic() {
+        int [][] newProperty = new int[3][3];
+        this.property = newProperty;
+        Scanner input = new Scanner(System.in);
+
+        int type;
+        int length = 0;
+        int width = 0;
+        double sumRow = 0;
+        float valuePerMeter= 0;
+
+        for (int i = 0; i < newProperty.length; i++) {
+            for (int j = 0; j < newProperty[i].length; j++) {
+                if (j == 0) {
+                    System.out.println("What is the property type? (0,1,2):  ");
+                    newProperty[i][j] = input.nextInt();
+                    type = newProperty[i][j];
+                    valuePerMeter=3.20f;
+                }
+                else if (j == 1) {
+                    System.out.println("What is the length of the property in meters:  ");
+                    newProperty[i][j] = input.nextInt();
+                    length = newProperty[i][j];
+                    valuePerMeter=2.10f;
+                }
+                else {
+                    System.out.println("What is the width of the property in meters:  ");
+                    newProperty[i][j] = input.nextInt();
+                    width = newProperty[i][j];
+                    valuePerMeter=0.90f;
+                }
+
+                System.out.println();
+                sumRow = (length * width) * valuePerMeter;
+            }
+            System.out.println("The value of this property is : " + sumRow);
+        }
+
+
+        System.out.println("  Type " + " Length " + "  Width ");
+        for (int i = 0; i < newProperty.length; i++) {
+            for (int j = 0; j < newProperty[i].length; j++) {
+                System.out.print("[  " + newProperty[i][j] + "  ]");
             }
             System.out.println();
         }
