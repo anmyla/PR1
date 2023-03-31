@@ -46,7 +46,7 @@ public class MultidimensionalArrayExercises {
         for (int i = 0; i < numField.length; i++) {
             for (int j = 0; j < numField[i].length; j++) {
                 counter++;
-                numField[i][j] = (int) (Math.random() * 100);
+                numField[i][j] = (int) (Math.random() * 101);
                 System.out.print(" " + numField[i][j]);
                 sum = sum + numField[i][j];
                 if (numField[i][j] > greatestValue) {
