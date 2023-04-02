@@ -1,6 +1,6 @@
 package CLASS_Mon_1303;
 
-public class Exercise1 {
+public class Exercise1_StringConcat {
 
     public static void main(String[] args) {
 

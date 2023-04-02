@@ -2,7 +2,7 @@ package CLASS_Mon_1303;
 
 import java.util.Scanner;
 
-public class Exercise7 {
+public class Exercise7_IfElseConditions {
     public static void main(String[] args) {
         int days = 0;
         Scanner scanner = new Scanner(System.in);

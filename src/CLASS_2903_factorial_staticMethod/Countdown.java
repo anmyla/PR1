@@ -1,4 +1,4 @@
-package CLASS_Wed_2903;
+package CLASS_2903_factorial_staticMethod;
 
 public class Countdown {
     public static void main(String[] args) {

@@ -1,21 +1,47 @@
 package CLASS_Mon_2703;
 
+import java.util.Scanner;
+
 public class TamagochiMain {
     public static void main(String[] args) {
-        char[][] position = new char[5][5];
         char where = 'X';
+
+        char[][] position = new char[10][10];
+        char holder = ' ';
+
+        Scanner axis = new Scanner(System.in);
+        System.out.println("Positon y-axis (0-9): " );
+        int yPosition = axis.nextInt();
+        System.out.println("Positon x-axis (0-9): " );
+        int xPosition = axis.nextInt();
+
+        position[yPosition][xPosition] = 'X';
+
+        for ( int i = 0; i < position.length; i++) {
+            for ( int j = 0; i < position[i].length; j++) {
+                if (i == yPosition && j == xPosition) {
+                    position[i][j] = 'X';
+                } else {
+                    position[i][j] = ' ';
+                }
+                holder = position[i][j];
+                System.out.print("[ " + holder + " ]");
+            }
+            System.out.println();
+        }
+
         Tamagochi pliki = new Tamagochi(4, 4, 0);
         pliki.feedTamagochi(10);
 
 
 //----------------------------1st TRY-----------------------------------------
-//        for (int i = pliki.y; i > 0; i--) {
-//            pliki.direction("down");
-//        }
-//        for (int j = pliki.x; j > 0; j--) {
-//            pliki.direction("left");
-//        }
-//        System.out.println(" |" + pliki.x + " |" + pliki.y + " food: " + pliki.foodStore);
+        for (int i = pliki.y; i > 0; i--) {
+            pliki.direction("down");
+        }
+        for (int j = pliki.x; j > 0; j--) {
+            pliki.direction("left");
+        }
+        System.out.println(" |" + pliki.x + " |" + pliki.y + " food: " + pliki.foodStore);
 
 //-----------------------------2nd TRY-----------------------------------------
 

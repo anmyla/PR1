@@ -2,7 +2,7 @@ package CLASS_Mon_1303;
 
 import java.util.Scanner;
 
-public class Exercise6 {
+public class Exercise6_Switch {
     public static void main(String[] args) {
 //        daysOfTheMonth();
 //        int numberOfDays = daysOfTheMonth();

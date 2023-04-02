@@ -2,7 +2,7 @@ package CLASS_Mon_1303;
 
 import java.util.Scanner;
 
-public class Exercise5 {
+public class Exercise5_Switch {
     public static void main(String[] args) {
         method1();
     }

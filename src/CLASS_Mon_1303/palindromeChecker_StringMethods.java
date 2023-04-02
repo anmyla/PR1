@@ -2,7 +2,7 @@ package CLASS_Mon_1303;
 
 import java.util.Scanner;
 
-public class palindromeChecker {
+public class palindromeChecker_StringMethods {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Enter a word or sentence: ");

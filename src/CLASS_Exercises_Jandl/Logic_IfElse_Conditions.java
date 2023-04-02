@@ -1,6 +1,6 @@
 package CLASS_Exercises_Jandl;
 
-public class Logic {
+public class Logic_IfElse_Conditions {
     public static void main(String[] args) {
 
         System.out.println();

@@ -1,8 +1,6 @@
 package CLASS_Mon_2703;
 
 public class Tamagochi {
-
-
     int x;
     int y;
     int foodStore;

@@ -2,7 +2,7 @@ package CLASS_Mon_1303;
 
 import java.util.Scanner;
 
-public class Exercise4 {
+public class Exercise4_Switch {
     public static void main(String[] args) {
 
     penaltyForOverSpeeding(100);

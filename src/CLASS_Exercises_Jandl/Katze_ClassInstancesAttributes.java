@@ -1,11 +1,11 @@
 package CLASS_Exercises_Jandl;
 
-public class Katze {
+public class Katze_ClassInstancesAttributes {
     boolean hasFur;
     boolean hasTail;
     String colour;
     int numberOfLegs;
-    public Katze (boolean hasFur, boolean hasTail, String colour, int numberOfLegs) {
+    public Katze_ClassInstancesAttributes(boolean hasFur, boolean hasTail, String colour, int numberOfLegs) {
         this.hasFur = hasFur;
         this.hasTail = hasTail;
         this.colour = colour;
