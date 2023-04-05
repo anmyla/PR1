@@ -3,9 +3,9 @@ package Homex4_MultidimensionalArrays;
 public class MultidimensionalArrayExercises {
     public static void main(String[] args) {
 
-        multiArraySumY();
-        multiArraySpiel();
-        calculateSumOfEachRow();
+//        multiArraySumY();
+//        multiArraySpiel();
+//        calculateSumOfEachRow();
         threeDimensionalArray();
 
     }
@@ -155,3 +155,6 @@ public class MultidimensionalArrayExercises {
     }
 
 }
+
+
+// 2 X " X

@@ -5,7 +5,7 @@ public class ArithmeticTower {
         buildArithmeticTower(10);
 
     }
-    public static int buildArithmeticTower (int multiplier) {
+    public static void buildArithmeticTower (int multiplier) {
         int product = 0;
         int quotient = 0;
         for (int i = 1; i <= 9; i++ ) {
@@ -18,6 +18,5 @@ public class ArithmeticTower {
             System.out.println( product + " / " + i + " = " + quotient);
             product = quotient;
         }
-        return product;
     }
 }
