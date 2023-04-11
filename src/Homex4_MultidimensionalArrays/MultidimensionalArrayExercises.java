@@ -139,6 +139,7 @@ public class MultidimensionalArrayExercises {
         System.out.println();
 
         lowestValue = greatestValue;
+
         for (int i = 0; i < threeDimensions.length; i++) {
             for (int j = 0; j < threeDimensions[i].length; j++) {
                 for (int k = 0; k < threeDimensions[i][j].length; k++) {
@@ -148,6 +149,7 @@ public class MultidimensionalArrayExercises {
                 }
             }
         }
+
         System.out.println("The sum of all the numbers in the array is: " + sum);
         System.out.println("The average of all the numbers in the array is: " + (sum / counter));
         System.out.println("The highest value in the array is: " + greatestValue);
