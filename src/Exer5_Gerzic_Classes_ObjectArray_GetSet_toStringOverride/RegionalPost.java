@@ -1,5 +1,5 @@
-package Exer5_Gerzic_Classes;
-import java.util.Arrays;
+package Exer5_Gerzic_Classes_ObjectArray_GetSet_toStringOverride;
+
 public class RegionalPost {
     public static void main(String[] args) {
 

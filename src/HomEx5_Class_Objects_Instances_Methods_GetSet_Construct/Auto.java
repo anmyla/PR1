@@ -1,7 +1,7 @@
 package HomEx5_Class_Objects_Instances_Methods_GetSet_Construct;
 
 public class Auto {
-     public String make = "";
+    public String make = "";
     public String model = "";
     public int year;
     double speed;

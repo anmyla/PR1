@@ -1,4 +1,4 @@
-package Exer5_Gerzic_Classes;
+package Exer5_Gerzic_Classes_ObjectArray_GetSet_toStringOverride;
 
 import java.util.Scanner;
 
